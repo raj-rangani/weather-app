@@ -1,0 +1,58 @@
+
+.back{
+    height: 200vh;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+}
+
+.back-content::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px; 
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: top;
+    filter: blur(5px);
+}
+
+.back-content {
+    height: 60vh;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+footer{
+    height: 8rem;
+    width: 90%;
+    margin:auto;
+    color: #b6b6b6;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+footer h1{
+    font-weight: 300;
+}
+
+.main{
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #eeeeee;
+}
