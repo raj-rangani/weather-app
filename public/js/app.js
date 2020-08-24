@@ -1,6 +1,3 @@
-console.log("hey there its a client side java script")
-
-
 const searchBtn = document.querySelector('#searchBtn')
 const content1 = document.querySelector('h4')
 const content2 = document.querySelector('h6')
