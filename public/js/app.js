@@ -81,15 +81,15 @@ arrow.addEventListener('click' , () => {
                     }
 
                     // for cloud cover
-                    if(data.cloudCover > 70 && data.cloudCover < 100) {
+                    if(data.cloudCover * 12.5 / 10 > 70) {
                         desc.innerHTML = "Mostly Cloudy"
                     }
 
-                    else if(data.cloudCover < 70 && data.cloudCover > 50) {
+                    else if(data.cloudCover * 12.5 / 10 < 70 && data.cloudCover * 12.5 / 10 > 50) {
                         desc.innerHTML = "Cloudy"
                     }
 
-                    else if(data.cloudCover < 50 && data.cloudCover > 30){
+                    else if(data.cloudCover * 12.5 / 10 < 50 && data.cloudCover * 12.5 / 10 > 30){
                         desc.innerHTML = "Partial cloudy"
                     }
 
@@ -97,7 +97,7 @@ arrow.addEventListener('click' , () => {
                         desc.innerHTML = "Clear"
                     }
 
-                    cloud.innerHTML = data.cloudCover + " %"
+                    cloud.innerHTML = data.cloudCover
                     speed.innerHTML = data.wind
                     visibility.innerHTML = data.visibility + " KM"
                     temperature.innerHTML = data.temperature

@@ -17,7 +17,7 @@ const forecast = (latitude , longitude , callback) => {
                 time: body.current.observation_time,
                 humidity: body.current.humidity,
                 wind: body.current.wind_dir + ' ' + body.current.wind_speed + "KM/h",
-                cloudCover: body.current.cloudcover * 12.5 / 10,
+                cloudCover: body.current.cloudcover,
                 temperature: body.current.temperature,
                 description: body.current.weather_descriptions,
                 feelsLikeTemperature: body.current.feelslike,

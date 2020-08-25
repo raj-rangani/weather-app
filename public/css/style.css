@@ -411,3 +411,17 @@ footer h1 {
     font-weight: 300;
 }
 /* Footer end */
+
+/* meadia query */
+
+@media only screen and (max-width: 1080px) and (min-width: 250px) {
+    ::before {
+        content: 'Sorry for inconvenience this site for mobile get start very soon';
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    body{
+        display: none;
+    }
+}
